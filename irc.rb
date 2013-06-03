@@ -1,10 +1,9 @@
-#require "socket"
+require "socket"
 
-print "Zzz..."
-#s = TCPSocket.new('www.google.com',80)
+server = gets.chomp
 
-4.times do
-    #puts line
-    puts "...zzz..."
-    sleep(1)
+s = TCPSocket.new(server,6666)
+
+while line = s.gets do
+  puts line.chomp
 end
