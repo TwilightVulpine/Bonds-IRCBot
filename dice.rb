@@ -21,6 +21,8 @@ class Dice
     D12_ROLL = 1..12
     D20_ROLL = 1..20
     D100_ROLL = 1..100
+	
+	
     
     def initialize()
         
@@ -31,6 +33,7 @@ class Dice
     public
     def roll(range, step=false, success=false, explosion=false, deduct=false)
         roll = nil
+		result = {:rolls, :sum, :target, :successes, :error}
         
         case range
         when Range
@@ -60,7 +63,7 @@ class Dice
             case range
             when 0
                 roll = nil
-                puts "Dice module error: Range can't equal 0." #TODO: Make message use class name
+                puts "#{self.class} module error: Range can't equal 0."
             when INITIAL_VALUE
                 roll = INITIAL_VALUE
             else
@@ -79,3 +82,5 @@ end
 
 #x = Dice::FUDGE_ROLL
 dice = Dice.new
+dice.roll(0)
+sleep(10)
