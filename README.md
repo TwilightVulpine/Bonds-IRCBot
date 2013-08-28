@@ -1,4 +1,4 @@
 Bonds-IRCBot
 ============
 
-IRC bot for dicerolling and assorted functions.
+IRC bot for dicerolling and other functions.

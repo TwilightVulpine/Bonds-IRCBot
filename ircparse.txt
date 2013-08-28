@@ -1,0 +1,1008 @@
+
+Matched: << QUIT :Leaving
+1: 
+2: QUIT
+3: 
+4: Leaving
+
+Matched: << NICK LuckyLeaf
+1: 
+2: NICK
+3: LuckyLeaf
+4: 
+
+Matched: << USER LuckyLeaf LuckyLeaf irc.canternet.org :Alex
+1: 
+2: USER
+3: LuckyLeaf LuckyLeaf irc.canternet.org 
+4: Alex
+
+Matched: >> :cadance.canternet.org NOTICE Auth :*** Looking up your hostname...
+1: cadance.canternet.org
+2: NOTICE
+3: Auth 
+4: *** Looking up your hostname...
+
+Matched: >> :cadance.canternet.org NOTICE Auth :*** Could not resolve your hostname: Domain name not found; using your IP address (189.33.12.135) instead.
+1: cadance.canternet.org
+2: NOTICE
+3: Auth 
+4: *** Could not resolve your hostname: Domain name not found; using your IP address (189.33.12.135) instead.
+
+Matched: >> :cadance.canternet.org NOTICE Auth :Welcome to Canternet!
+1: cadance.canternet.org
+2: NOTICE
+3: Auth 
+4: Welcome to Canternet!
+
+Matched: >> :cadance.canternet.org 001 LuckyLeaf :Welcome to the Canternet IRC Network LuckyLeaf!LuckyLeaf@189.33.12.135
+1: cadance.canternet.org
+2: 001
+3: LuckyLeaf 
+4: Welcome to the Canternet IRC Network LuckyLeaf!LuckyLeaf@189.33.12.135
+
+Matched: >> :cadance.canternet.org 002 LuckyLeaf :Your host is cadance.canternet.org, running version InspIRCd-2.0
+1: cadance.canternet.org
+2: 002
+3: LuckyLeaf 
+4: Your host is cadance.canternet.org, running version InspIRCd-2.0
+
+Matched: >> :cadance.canternet.org 003 LuckyLeaf :This server was created 18:30:13 Mar 10 2013
+1: cadance.canternet.org
+2: 003
+3: LuckyLeaf 
+4: This server was created 18:30:13 Mar 10 2013
+
+Matched: >> :cadance.canternet.org 004 LuckyLeaf cadance.canternet.org InspIRCd-2.0 BIRSWcdghiorswx ABCDFHIJKLMNOPQRSTXYabcdefghijklmnopqrstuvz FHIJLXYabdefghjkloqv
+1: cadance.canternet.org
+2: 004
+3: LuckyLeaf cadance.canternet.org InspIRCd-2.0 BIRSWcdghiorswx ABCDFHIJKLMNOPQRSTXYabcdefghijklmnopqrstuvz FHIJLXYabdefghjkloqv
+4: 
+
+Matched: >> :cadance.canternet.org 005 LuckyLeaf AWAYLEN=200 CALLERID=g CASEMAPPING=rfc1459 CHANMODES=IXbeg,k,FHJLdfjl,ABCDKMNOPQRSTcimnprstuz CHANNELLEN=64 CHANTYPES=# CHARSET=ascii ELIST=MU ESILENCE EXCEPTS=e EXTBAN=,ABCNOQRSTUcjmprsz FNC INVEX=I :are supported by this server
+1: cadance.canternet.org
+2: 005
+3: LuckyLeaf AWAYLEN=200 CALLERID=g CASEMAPPING=rfc1459 CHANMODES=IXbeg,k,FHJLdfjl,ABCDKMNOPQRSTcimnprstuz CHANNELLEN=64 CHANTYPES=# CHARSET=ascii ELIST=MU ESILENCE EXCEPTS=e EXTBAN=,ABCNOQRSTUcjmprsz FNC INVEX=I 
+4: are supported by this server
+
+Matched: >> :cadance.canternet.org 005 LuckyLeaf KICKLEN=255 MAP MAXBANS=60 MAXCHANNELS=50 MAXPARA=32 MAXTARGETS=20 MODES=20 NAMESX NETWORK=Canternet NICKLEN=31 OPERLOG PREFIX=(Yqaohv)!~&@%+ SILENCE=32 :are supported by this server
+1: cadance.canternet.org
+2: 005
+3: LuckyLeaf KICKLEN=255 MAP MAXBANS=60 MAXCHANNELS=50 MAXPARA=32 MAXTARGETS=20 MODES=20 NAMESX NETWORK=Canternet NICKLEN=31 OPERLOG PREFIX=(Yqaohv)!~&@%+ SILENCE=32 
+4: are supported by this server
+
+Matched: << PROTOCTL NAMESX
+1: 
+2: PROTOCTL
+3: NAMESX
+4: 
+
+Matched: >> :cadance.canternet.org 005 LuckyLeaf SSL=0.0.0.0:6659 STARTTLS STATUSMSG=!~&@%+ TOPICLEN=307 UHNAMES USERIP VBANLIST WALLCHOPS WALLVOICES WATCH=32 :are supported by this server
+1: cadance.canternet.org
+2: 005
+3: LuckyLeaf SSL=0.0.0.0
+4: 6659 STARTTLS STATUSMSG=!~&@%+ TOPICLEN=307 UHNAMES USERIP VBANLIST WALLCHOPS WALLVOICES WATCH=32 :are supported by this server
+
+Matched: >> :cadance.canternet.org 042 LuckyLeaf 142AALHPD :your unique ID
+1: cadance.canternet.org
+2: 042
+3: LuckyLeaf 142AALHPD 
+4: your unique ID
+
+Matched: >> :cadance.canternet.org 375 LuckyLeaf :cadance.canternet.org message of the day
+1: cadance.canternet.org
+2: 375
+3: LuckyLeaf 
+4: cadance.canternet.org message of the day
+
+Matched: >> :cadance.canternet.org 372 LuckyLeaf :-                                                 Y
+1: cadance.canternet.org
+2: 372
+3: LuckyLeaf 
+4: -                                                 Y
+
+Matched: >> :cadance.canternet.org 372 LuckyLeaf :-                                                Yj
+1: cadance.canternet.org
+2: 372
+3: LuckyLeaf 
+4: -                                                Yj
+
+Matched: >> :cadance.canternet.org 372 LuckyLeaf :-                                              jYY
+1: cadance.canternet.org
+2: 372
+3: LuckyLeaf 
+4: -                                              jYY
+
+Matched: >> :cadance.canternet.org 372 LuckyLeaf :-                                      #YYTYYYYYYaT   B
+1: cadance.canternet.org
+2: 372
+3: LuckyLeaf 
+4: -                                      #YYTYYYYYYaT   B
+
+Matched: >> :cadance.canternet.org 372 LuckyLeaf :-                                   zzFYYYYY        J#a
+1: cadance.canternet.org
+2: 372
+3: LuckyLeaf 
+4: -                                   zzFYYYYY        J#a
+
+Matched: >> :cadance.canternet.org 372 LuckyLeaf :-                                 JDsJaF     EEBBHE6YYJ Y
+1: cadance.canternet.org
+2: 372
+3: LuckyLeaf 
+4: -                                 JDsJaF     EEBBHE6YYJ Y
+
+Matched: >> :cadance.canternet.org 372 LuckyLeaf :-                                TDTTJTJ  EHFFGFGFGFFBE  Yz
+1: cadance.canternet.org
+2: 372
+3: LuckyLeaf 
+4: -                                TDTTJTJ  EHFFGFGFGFFBE  Yz
+
+Matched: >> :cadance.canternet.org 372 LuckyLeaf :-                               7 GTGTJTLEHBFGGRGGFFFGFFE
+1: cadance.canternet.org
+2: 372
+3: LuckyLeaf 
+4: -                               7 GTGTJTLEHBFGGRGGFFFGFFE
+
+Matched: >> :cadance.canternet.org 372 LuckyLeaf :-                               Y RTnJTJTTYYEEFFGB  HFGFFBE
+1: cadance.canternet.org
+2: 372
+3: LuckyLeaf 
+4: -                               Y RTnJTJTTYYEEFFGB  HFGFFBE
+
+Matched: >> :cadance.canternet.org 372 LuckyLeaf :-                              x  RYTTJTJTHTTYY BFLYY EHBFBE
+1: cadance.canternet.org
+2: 372
+3: LuckyLeaf 
+4: -                              x  RYTTJTJTHTTYY BFLYY EHBFBE
+
+Matched: >> :cadance.canternet.org 372 LuckyLeaf :-                              1 EHYYTTJTsa    GE ZYPEE  EHEE
+1: cadance.canternet.org
+2: 372
+3: LuckyLeaf 
+4: -                              1 EHYYTTJTsa    GE ZYPEE  EHEE
+
+Matched: >> :cadance.canternet.org 372 LuckyLeaf :-                              s HBFYYJTas    EEEEYYJ E    EE
+1: cadance.canternet.org
+2: 372
+3: LuckyLeaf 
+4: -                              s HBFYYJTas    EEEEYYJ E    EE
+
+Matched: >> :cadance.canternet.org 372 LuckyLeaf :-                              1 EFFBYTTJx   zY  E TJ E
+1: cadance.canternet.org
+2: 372
+3: LuckyLeaf 
+4: -                              1 EFFBYTTJx   zY  E TJ E
+
+Matched: >> :cadance.canternet.org 372 LuckyLeaf :-        7jYTYTYYYT1            Y HFFTYYJa   1  EEYT@ E
+1: cadance.canternet.org
+2: 372
+3: LuckyLeaf 
+4: -        7jYTYTYYYT1            Y HFFTYYJa   1  EEYT@ E
+
+Matched: >> :cadance.canternet.org 372 LuckyLeaf :-      nYYYYYYY     YT          z  HFFHYYJ#   aY EYTT E
+1: cadance.canternet.org
+2: 372
+3: LuckyLeaf 
+4: -      nYYYYYYY     YT          z  HFFHYYJ#   aY EYTT E
+
+Matched: >> :cadance.canternet.org 372 LuckyLeaf :-    1TYYYYYY  YEEE   YY         Y YBFBHET#Y   GDsTTJTRG
+1: cadance.canternet.org
+2: 372
+3: LuckyLeaf 
+4: -    1TYYYYYY  YEEE   YY         Y YBFBHET#Y   GDsTTJTRG
+
+Matched: >> :cadance.canternet.org 372 LuckyLeaf :-   7YYYYYY  EBFFFFBBE  YJ       7Y FFGFYTJz#x YTJTJTeTB
+1: cadance.canternet.org
+2: 372
+3: LuckyLeaf 
+4: -   7YYYYYY  EBFFFFBBE  YJ       7Y FFGFYTJz#x YTJTJTeTB
+
+Matched: >> :cadance.canternet.org 372 LuckyLeaf :-   TYYYYYY EFGRRRFFFFHE  x       x  HFFYYTTaa#asJJJFJB
+1: cadance.canternet.org
+2: 372
+3: LuckyLeaf 
+4: -   TYYYYYY EFGRRRFFFFHE  x       x  HFFYYTTaa#asJJJFJB
+
+Matched: >> :cadance.canternet.org 372 LuckyLeaf :-  nYYYYYY 1FGDRGFBHHEBHE  5FBFY   T  FFFYTTFis1zxLB
+1: cadance.canternet.org
+2: 372
+3: LuckyLeaf 
+4: -  nYYYYYY 1FGDRGFBHHEBHE  5FBFY   T  FFFYTTFis1zxLB
+
+Matched: >> :cadance.canternet.org 372 LuckyLeaf :-  1YYYYYY EFDRGBE     EEDJJJTaa#F J  BFEYTTF
+1: cadance.canternet.org
+2: 372
+3: LuckyLeaf 
+4: -  1YYYYYY EFDRGBE     EEDJJJTaa#F J  BFEYTTF
+
+Matched: >> :cadance.canternet.org 372 LuckyLeaf :-  TYYYYYY EGRRFJ       GT JTJTaJsaJ  BBYTTJ8
+1: cadance.canternet.org
+2: 372
+3: LuckyLeaf 
+4: -  TYYYYYY EGRRFJ       GT JTJTaJsaJ  BBYTTJ8
+
+Matched: >> :cadance.canternet.org 372 LuckyLeaf :-  YYYYYYY EFDGB        sTTTaJJJaTa  EBEYTJTL
+1: cadance.canternet.org
+2: 372
+3: LuckyLeaf 
+4: -  YYYYYYY EFDGB        sTTTaJJJaTa  EBEYTJTL
+
+Matched: >> :cadance.canternet.org 372 LuckyLeaf :-  7YYYYYY 0FRRB       FsYYsJaTJTJT EBBYTJJa8
+1: cadance.canternet.org
+2: 372
+3: LuckyLeaf 
+4: -  7YYYYYY 0FRRB       FsYYsJaTJTJT EBBYTJJa8
+
+Matched: >> :cadance.canternet.org 372 LuckyLeaf :-  7YYYYYY  BGGFE      DJTTJJTJTTT EHEYTJTaJB
+1: cadance.canternet.org
+2: 372
+3: LuckyLeaf 
+4: -  7YYYYYY  BGGFE      DJTTJJTJTTT EHEYTJTaJB
+
+Matched: >> :cadance.canternet.org 372 LuckyLeaf :-   YYYYYYY EFRFB       # JsTJTTJEEYYYYTJaJs
+1: cadance.canternet.org
+2: 372
+3: LuckyLeaf 
+4: -   YYYYYYY EFRFB       # JsTJTTJEEYYYYTJaJs
+
+Matched: >> :cadance.canternet.org 372 LuckyLeaf :-   jYYYYYY  FGRFL      0aaJJTRTTTTTTTJTaJzG
+1: cadance.canternet.org
+2: 372
+3: LuckyLeaf 
+4: -   jYYYYYY  FGRFL      0aaJJTRTTTTTTTJTaJzG
+
+Matched: >> :cadance.canternet.org 372 LuckyLeaf :-    7YYYYYY EFGFE      P#JJT1TTTTTJTJTTJX
+1: cadance.canternet.org
+2: 372
+3: LuckyLeaf 
+4: -    7YYYYYY EFGFE      P#JJT1TTTTTJTJTTJX
+
+Matched: >> :cadance.canternet.org 372 LuckyLeaf :-     jYYYYY  BGGF@      JJTTeneGTJJJTTRK
+1: cadance.canternet.org
+2: 372
+3: LuckyLeaf 
+4: -     jYYYYY  BGGF@      JJTTeneGTJJJTTRK
+
+Matched: >> :cadance.canternet.org 372 LuckyLeaf :-      jYYYYY EFRFE    jsaTTD71 GTTJTX7nO
+1: cadance.canternet.org
+2: 372
+3: LuckyLeaf 
+4: -      jYYYYY EFRFE    jsaTTD71 GTTJTX7nO
+
+Matched: >> :cadance.canternet.org 372 LuckyLeaf :-       1YYYY  FGGB   BaaTJT7xG JJaJTnj7O
+1: cadance.canternet.org
+2: 372
+3: LuckyLeaf 
+4: -       1YYYY  FGGB   BaaTJT7xG JJaJTnj7O
+
+Matched: >> :cadance.canternet.org 372 LuckyLeaf :-       xYYYYY BRGFE  aaTJTR1jRYJJTJTp1jjZ
+1: cadance.canternet.org
+2: 372
+3: LuckyLeaf 
+4: -       xYYYYY BRGFE  aaTJTR1jRYJJTJTp1jjZ
+
+Matched: >> :cadance.canternet.org 372 LuckyLeaf :-       TYYYY  BGDFH GJJaTTLj7 GJTaTTi1zjF
+1: cadance.canternet.org
+2: 372
+3: LuckyLeaf 
+4: -       TYYYY  BGDFH GJJaTTLj7 GJTaTTi1zjF
+
+Matched: >> :cadance.canternet.org 372 LuckyLeaf :-       xYYYY  BRRFH FTJJJTn1X FTJTTTRzxxF
+1: cadance.canternet.org
+2: 372
+3: LuckyLeaf 
+4: -       xYYYY  BRRFH FTJJJTn1X FTJTTTRzxxF
+
+Matched: >> :cadance.canternet.org 372 LuckyLeaf :-  #TTTYYYY   EGGRBE 1JTaJs7j@ iJTJTT8x#7P
+1: cadance.canternet.org
+2: 372
+3: LuckyLeaf 
+4: -  #TTTYYYY   EGGRBE 1JTaJs7j@ iJTJTT8x#7P
+
+Matched: >> :cadance.canternet.org 372 LuckyLeaf :-   1YYYYY   EFGGBH  #JJTJTn1e eTJJJTRz1zjR
+1: cadance.canternet.org
+2: 372
+3: LuckyLeaf 
+4: -   1YYYYY   EFGGBH  #JJTJTn1e eTJJJTRz1zjR
+
+Matched: >> :cadance.canternet.org 372 LuckyLeaf :-     7sJYYEHFFFBE   ssJJTT571pPTTJTTT71nnF
+1: cadance.canternet.org
+2: 372
+3: LuckyLeaf 
+4: -     7sJYYEHFFFBE   ssJJTT571pPTTJTTT71nnF
+
+Matched: >> :cadance.canternet.org 372 LuckyLeaf :-       EEEEEEHE     zJJTJTR1eRGTJTaTTRXX@G 
+1: cadance.canternet.org
+2: 372
+3: LuckyLeaf 
+4: -       EEEEEEHE     zJJTJTR1eRGTJTaTTRXX@G 
+
+Matched: >> :cadance.canternet.org 372 LuckyLeaf :-                    ZJTJTTR8  GJTJJJTG
+1: cadance.canternet.org
+2: 372
+3: LuckyLeaf 
+4: -                    ZJTJTTR8  GJTJJJTG
+
+Matched: >> :cadance.canternet.org 372 LuckyLeaf :-                    FGTTJTF    KJTaTJTi
+1: cadance.canternet.org
+2: 372
+3: LuckyLeaf 
+4: -                    FGTTJTF    KJTaTJTi
+
+Matched: >> :cadance.canternet.org 372 LuckyLeaf :- 
+1: cadance.canternet.org
+2: 372
+3: LuckyLeaf 
+4: - 
+
+Matched: >> :cadance.canternet.org 372 LuckyLeaf :- /---------------------------------------------------------\
+1: cadance.canternet.org
+2: 372
+3: LuckyLeaf 
+4: - /---------------------------------------------------------\
+
+Matched: >> :cadance.canternet.org 372 LuckyLeaf :- |           Welcome to canternet.org IRC!                 |
+1: cadance.canternet.org
+2: 372
+3: LuckyLeaf 
+4: - |           Welcome to canternet.org IRC!                 |
+
+Matched: >> :cadance.canternet.org 372 LuckyLeaf :- |                                                         |
+1: cadance.canternet.org
+2: 372
+3: LuckyLeaf 
+4: - |                                                         |
+
+Matched: >> :cadance.canternet.org 372 LuckyLeaf :- | Rules: 1) No spamming/flooding                          |
+1: cadance.canternet.org
+2: 372
+3: LuckyLeaf 
+4: - | Rules: 1) No spamming/flooding                          |
+
+Matched: >> :cadance.canternet.org 372 LuckyLeaf :- |        2) No abusive bots                               |
+1: cadance.canternet.org
+2: 372
+3: LuckyLeaf 
+4: - |        2) No abusive bots                               |
+
+Matched: >> :cadance.canternet.org 372 LuckyLeaf :- | For more detailed rules, use the /rules command         |
+1: cadance.canternet.org
+2: 372
+3: LuckyLeaf 
+4: - | For more detailed rules, use the /rules command         |
+
+Matched: >> :cadance.canternet.org 372 LuckyLeaf :- |                                                         |
+1: cadance.canternet.org
+2: 372
+3: LuckyLeaf 
+4: - |                                                         |
+
+Matched: >> :cadance.canternet.org 372 LuckyLeaf :- | Ports:                                                  |
+1: cadance.canternet.org
+2: 372
+3: LuckyLeaf 
+4: - | Ports:                                                  |
+
+Matched: >> :cadance.canternet.org 372 LuckyLeaf :- |       SSL: 6660-6665                                    |
+1: cadance.canternet.org
+2: 372
+3: LuckyLeaf 
+4: - |       SSL: 6660-6665                                    |
+
+Matched: >> :cadance.canternet.org 372 LuckyLeaf :- |       non-SSL: 6666-6669                                |
+1: cadance.canternet.org
+2: 372
+3: LuckyLeaf 
+4: - |       non-SSL: 6666-6669                                |
+
+Matched: >> :cadance.canternet.org 372 LuckyLeaf :- |                                                         |
+1: cadance.canternet.org
+2: 372
+3: LuckyLeaf 
+4: - |                                                         |
+
+Matched: >> :cadance.canternet.org 372 LuckyLeaf :- | Official Channels:                                      |
+1: cadance.canternet.org
+2: 372
+3: LuckyLeaf 
+4: - | Official Channels:                                      |
+
+Matched: >> :cadance.canternet.org 372 LuckyLeaf :- |                                                         |
+1: cadance.canternet.org
+2: 372
+3: LuckyLeaf 
+4: - |                                                         |
+
+Matched: >> :cadance.canternet.org 372 LuckyLeaf :- |       Lobby: #Canternet                                 |
+1: cadance.canternet.org
+2: 372
+3: LuckyLeaf 
+4: - |       Lobby: #Canternet                                 |
+
+Matched: >> :cadance.canternet.org 372 LuckyLeaf :- |       Help:  #Help                                      |
+1: cadance.canternet.org
+2: 372
+3: LuckyLeaf 
+4: - |       Help:  #Help                                      |
+
+Matched: >> :cadance.canternet.org 372 LuckyLeaf :- | For other channels use /list or /msg ALIS list          |
+1: cadance.canternet.org
+2: 372
+3: LuckyLeaf 
+4: - | For other channels use /list or /msg ALIS list          |
+
+Matched: >> :cadance.canternet.org 372 LuckyLeaf :- |                                                         |
+1: cadance.canternet.org
+2: 372
+3: LuckyLeaf 
+4: - |                                                         |
+
+Matched: >> :cadance.canternet.org 372 LuckyLeaf :- | Services:                                               |
+1: cadance.canternet.org
+2: 372
+3: LuckyLeaf 
+4: - | Services:                                               |
+
+Matched: >> :cadance.canternet.org 372 LuckyLeaf :- |    /msg NickServ help                                   |
+1: cadance.canternet.org
+2: 372
+3: LuckyLeaf 
+4: - |    /msg NickServ help                                   |
+
+Matched: >> :cadance.canternet.org 372 LuckyLeaf :- |    /msg ChanServ help                                   |
+1: cadance.canternet.org
+2: 372
+3: LuckyLeaf 
+4: - |    /msg ChanServ help                                   |
+
+Matched: >> :cadance.canternet.org 372 LuckyLeaf :- |    /msg MemoServ help                                   |
+1: cadance.canternet.org
+2: 372
+3: LuckyLeaf 
+4: - |    /msg MemoServ help                                   |
+
+Matched: >> :cadance.canternet.org 372 LuckyLeaf :- | For all other services: /msg HelpServ services          |
+1: cadance.canternet.org
+2: 372
+3: LuckyLeaf 
+4: - | For all other services: /msg HelpServ services          |
+
+Matched: >> :cadance.canternet.org 372 LuckyLeaf :- |                                                         |
+1: cadance.canternet.org
+2: 372
+3: LuckyLeaf 
+4: - |                                                         |
+
+Matched: >> :cadance.canternet.org 372 LuckyLeaf :- \---------------------------------------------------------/
+1: cadance.canternet.org
+2: 372
+3: LuckyLeaf 
+4: - \---------------------------------------------------------/
+
+Matched: >> :cadance.canternet.org 376 LuckyLeaf :End of message of the day.
+1: cadance.canternet.org
+2: 376
+3: LuckyLeaf 
+4: End of message of the day.
+
+Matched: << NICKSERV IDENTIFY PuddingR4Y!
+1: 
+2: NICKSERV
+3: IDENTIFY PuddingR4Y!
+4: 
+
+Matched: << WATCH +Ch3rryPi3Guy +Dimestream +BrokenWings +GozerTheEquestrian +Ask18Carrot +Wirepony +nomad +DontAskForCookies +Pantzar +ThePrettiestFilly +NitoKa +AMARDA +SlashySmiley +DontAskForLuck +Heartshine
+1: 
+2: WATCH
+3: +Ch3rryPi3Guy +Dimestream +BrokenWings +GozerTheEquestrian +Ask18Carrot +Wirepony +nomad +DontAskForCookies +Pantzar +ThePrettiestFilly +NitoKa +AMARDA +SlashySmiley +DontAskForLuck +Heartshine
+4: 
+
+Matched: >> :cadance.canternet.org 251 LuckyLeaf :There are 2 users and 915 invisible on 5 servers
+1: cadance.canternet.org
+2: 251
+3: LuckyLeaf 
+4: There are 2 users and 915 invisible on 5 servers
+
+Matched: >> :cadance.canternet.org 252 LuckyLeaf 32 :operator(s) online
+1: cadance.canternet.org
+2: 252
+3: LuckyLeaf 32 
+4: operator(s) online
+
+Matched: >> :cadance.canternet.org 254 LuckyLeaf 501 :channels formed
+1: cadance.canternet.org
+2: 254
+3: LuckyLeaf 501 
+4: channels formed
+
+Matched: >> :cadance.canternet.org 255 LuckyLeaf :I have 293 clients and 3 servers
+1: cadance.canternet.org
+2: 255
+3: LuckyLeaf 
+4: I have 293 clients and 3 servers
+
+Matched: >> :cadance.canternet.org 265 LuckyLeaf :Current Local Users: 293  Max: 375
+1: cadance.canternet.org
+2: 265
+3: LuckyLeaf 
+4: Current Local Users: 293  Max: 375
+
+Matched: >> :cadance.canternet.org 266 LuckyLeaf :Current Global Users: 917  Max: 2210
+1: cadance.canternet.org
+2: 266
+3: LuckyLeaf 
+4: Current Global Users: 917  Max: 2210
+
+Matched: >> :cadance.canternet.org 396 LuckyLeaf Pony-4h9.k6k.33.189.IP :is now your displayed host
+1: cadance.canternet.org
+2: 396
+3: LuckyLeaf Pony-4h9.k6k.33.189.IP 
+4: is now your displayed host
+
+Matched: >> :LuckyLeaf!LuckyLeaf@Pony-4h9.k6k.33.189.IP MODE LuckyLeaf +xi
+1: LuckyLeaf!LuckyLeaf@Pony-4h9.k6k.33.189.IP
+2: MODE
+3: LuckyLeaf +xi
+4: 
+
+Matched: >> :cadance.canternet.org NOTICE LuckyLeaf :*** You are connected using SSL cipher "RSA-AES-256-CBC-SHA1"
+1: cadance.canternet.org
+2: NOTICE
+3: LuckyLeaf 
+4: *** You are connected using SSL cipher "RSA-AES-256-CBC-SHA1"
+
+Matched: >> :InfoServ!InfoServ@canternet.org NOTICE LuckyLeaf :*** Message(s) of the Day ***
+1: InfoServ!InfoServ@canternet.org
+2: NOTICE
+3: LuckyLeaf 
+4: *** Message(s) of the Day ***
+
+Matched: >> :InfoServ!InfoServ@canternet.org NOTICE LuckyLeaf :[Brony@Home] Notice from Colgate, posted 03:14 on 06/30/2013:
+1: InfoServ!InfoServ@canternet.org
+2: NOTICE
+3: LuckyLeaf 
+4: [Brony@Home] Notice from Colgate, posted 03:14 on 06/30/2013:
+
+Matched: >> :InfoServ!InfoServ@canternet.org NOTICE LuckyLeaf :Have a computer? Want some prizes? It is time for brony@home's summer competition! Up for grabs are some plushies, video cards, and more! Check it out in #foldingismagic and http://www.bronyathome.org/forums/showthread.php?tid=151
+1: InfoServ!InfoServ@canternet.org
+2: NOTICE
+3: LuckyLeaf 
+4: Have a computer? Want some prizes? It is time for brony@home's summer competition! Up for grabs are some plushies, video cards, and more! Check it out in #foldingismagic and http://www.bronyathome.org/forums/showthread.php?tid=151
+
+Matched: >> :InfoServ!InfoServ@canternet.org NOTICE LuckyLeaf :*** End of Message(s) of the Day ***
+1: InfoServ!InfoServ@canternet.org
+2: NOTICE
+3: LuckyLeaf 
+4: *** End of Message(s) of the Day ***
+
+Matched: >> :NickServ!NickServ@canternet.org NOTICE LuckyLeaf :This nickname is registered. Please choose a different nickname, or identify via /msg NickServ identify <password>.
+1: NickServ!NickServ@canternet.org
+2: NOTICE
+3: LuckyLeaf 
+4: This nickname is registered. Please choose a different nickname, or identify via /msg NickServ identify <password>.
+
+Matched: >> :NickServ!NickServ@canternet.org NOTICE LuckyLeaf :You have 30 seconds to identify to your nickname before it is changed.
+1: NickServ!NickServ@canternet.org
+2: NOTICE
+3: LuckyLeaf 
+4: You have 30 seconds to identify to your nickname before it is changed.
+
+Matched: >> :cadance.canternet.org 605 LuckyLeaf Ch3rryPi3Guy * * 0 :is offline
+1: cadance.canternet.org
+2: 605
+3: LuckyLeaf Ch3rryPi3Guy * * 0 
+4: is offline
+
+Matched: >> :cadance.canternet.org 605 LuckyLeaf Dimestream * * 0 :is offline
+1: cadance.canternet.org
+2: 605
+3: LuckyLeaf Dimestream * * 0 
+4: is offline
+
+Matched: >> :cadance.canternet.org 604 LuckyLeaf BrokenWings ltsqeqgtuhc Pony-l43dcl.res.rr.com 1373155953 :is online
+1: cadance.canternet.org
+2: 604
+3: LuckyLeaf BrokenWings ltsqeqgtuhc Pony-l43dcl.res.rr.com 1373155953 
+4: is online
+
+Matched: >> :cadance.canternet.org 605 LuckyLeaf GozerTheEquestrian * * 0 :is offline
+1: cadance.canternet.org
+2: 605
+3: LuckyLeaf GozerTheEquestrian * * 0 
+4: is offline
+
+Matched: >> :cadance.canternet.org 605 LuckyLeaf Ask18Carrot * * 0 :is offline
+1: cadance.canternet.org
+2: 605
+3: LuckyLeaf Ask18Carrot * * 0 
+4: is offline
+
+Matched: >> :cadance.canternet.org 604 LuckyLeaf Wirepony NibbleWires Pony-eih577.gci.net 1373157554 :is online
+1: cadance.canternet.org
+2: 604
+3: LuckyLeaf Wirepony NibbleWires Pony-eih577.gci.net 1373157554 
+4: is online
+
+Matched: >> :cadance.canternet.org 604 LuckyLeaf nomad nomad the.luna.diviner 1373143863 :is online
+1: cadance.canternet.org
+2: 604
+3: LuckyLeaf nomad nomad the.luna.diviner 1373143863 
+4: is online
+
+Matched: >> :cadance.canternet.org 605 LuckyLeaf DontAskForCookies * * 0 :is offline
+1: cadance.canternet.org
+2: 605
+3: LuckyLeaf DontAskForCookies * * 0 
+4: is offline
+
+Matched: >> :cadance.canternet.org 605 LuckyLeaf Pantzar * * 0 :is offline
+1: cadance.canternet.org
+2: 605
+3: LuckyLeaf Pantzar * * 0 
+4: is offline
+
+Matched: >> :cadance.canternet.org 604 LuckyLeaf ThePrettiestFilly ThePretties Pony-ctdohc.wv.frontiernet.net 1373147823 :is online
+1: cadance.canternet.org
+2: 604
+3: LuckyLeaf ThePrettiestFilly ThePretties Pony-ctdohc.wv.frontiernet.net 1373147823 
+4: is online
+
+Matched: >> :cadance.canternet.org 604 LuckyLeaf NitoKa goljxmfgopp Pony-970pi2.clmboh.sbcglobal.net 1373126163 :is online
+1: cadance.canternet.org
+2: 604
+3: LuckyLeaf NitoKa goljxmfgopp Pony-970pi2.clmboh.sbcglobal.net 1373126163 
+4: is online
+
+Matched: >> :cadance.canternet.org 605 LuckyLeaf AMARDA * * 0 :is offline
+1: cadance.canternet.org
+2: 605
+3: LuckyLeaf AMARDA * * 0 
+4: is offline
+
+Matched: >> :cadance.canternet.org 605 LuckyLeaf SlashySmiley * * 0 :is offline
+1: cadance.canternet.org
+2: 605
+3: LuckyLeaf SlashySmiley * * 0 
+4: is offline
+
+Matched: >> :cadance.canternet.org 605 LuckyLeaf DontAskForLuck * * 0 :is offline
+1: cadance.canternet.org
+2: 605
+3: LuckyLeaf DontAskForLuck * * 0 
+4: is offline
+
+Matched: >> :cadance.canternet.org 605 LuckyLeaf Heartshine * * 0 :is offline
+1: cadance.canternet.org
+2: 605
+3: LuckyLeaf Heartshine * * 0 
+4: is offline
+
+Matched: >> :NickServ!NickServ@canternet.org NOTICE LuckyLeaf :You are now identified for LuckyLeaf.
+1: NickServ!NickServ@canternet.org
+2: NOTICE
+3: LuckyLeaf 
+4: You are now identified for LuckyLeaf.
+
+Matched: >> :cadance.canternet.org 900 LuckyLeaf LuckyLeaf!LuckyLeaf@Pony-4h9.k6k.33.189.IP LuckyLeaf :You are now logged in as LuckyLeaf
+1: cadance.canternet.org
+2: 900
+3: LuckyLeaf LuckyLeaf!LuckyLeaf@Pony-4h9.k6k.33.189.IP LuckyLeaf 
+4: You are now logged in as LuckyLeaf
+
+Matched: >> :cadance.canternet.org MODE LuckyLeaf -x
+1: cadance.canternet.org
+2: MODE
+3: LuckyLeaf -x
+4: 
+
+Matched: >> :cadance.canternet.org 396 LuckyLeaf wandering.fateweaver :is now your displayed host
+1: cadance.canternet.org
+2: 396
+3: LuckyLeaf wandering.fateweaver 
+4: is now your displayed host
+
+Matched: << PING LAG4187521919
+1: 
+2: PING
+3: LAG4187521919
+4: 
+
+Matched: >> :cadance.canternet.org PONG cadance.canternet.org :LAG4187521919
+1: cadance.canternet.org
+2: PONG
+3: cadance.canternet.org 
+4: LAG4187521919
+
+Matched: << LIST >0,<10000
+1: 
+2: LIST
+3: >0,<10000
+4: 
+
+Matched: >> :cadance.canternet.org 321 LuckyLeaf Channel :Users Name
+1: cadance.canternet.org
+2: 321
+3: LuckyLeaf Channel 
+4: Users Name
+
+Matched: >> :cadance.canternet.org 322 LuckyLeaf #StateAfterYears 2 :[+nt] Welcome! This RP takes place 4 years after the events of #FillyDelphiaState , and as such, your characters have graduated and moved. The RP takes place in Ponyville and Canterlot, is Anthro, and is currently without a rating, though please attempt to keep things around PG-13. Stay tuned for more news!
+1: cadance.canternet.org
+2: 322
+3: LuckyLeaf #StateAfterYears 2 
+4: [+nt] Welcome! This RP takes place 4 years after the events of #FillyDelphiaState , and as such, your characters have graduated and moved. The RP takes place in Ponyville and Canterlot, is Anthro, and is currently without a rating, though please attempt to keep things around PG-13. Stay tuned for more news!
+
+Matched: >> :cadance.canternet.org 322 LuckyLeaf #rponies 2 :[+nt] 
+1: cadance.canternet.org
+2: 322
+3: LuckyLeaf #rponies 2 
+4: [+nt] 
+
+Matched: >> :cadance.canternet.org 322 LuckyLeaf #NeighgatonOOC 4 :[+nt] 
+1: cadance.canternet.org
+2: 322
+3: LuckyLeaf #NeighgatonOOC 4 
+4: [+nt] 
+
+Matched: >> :cadance.canternet.org 322 LuckyLeaf #derp|sidemods 3 :[+nt] #derp|side: http://derpy.me/derpsiderules /// #derpafterdark: http://derpy.me/YeTYo
+1: cadance.canternet.org
+2: 322
+3: LuckyLeaf #derp|sidemods 3 
+4: [+nt] #derp|side: http://derpy.me/derpsiderules /// #derpafterdark: http://derpy.me/YeTYo
+
+Matched: >> :cadance.canternet.org 322 LuckyLeaf #SquintzDarkLounge 2 :[+nt] Have fun and Keep it clean
+1: cadance.canternet.org
+2: 322
+3: LuckyLeaf #SquintzDarkLounge 2 
+4: [+nt] Have fun and Keep it clean
+
+Matched: >> :cadance.canternet.org 322 LuckyLeaf #TheWorkshop 5 :[+nt] Just a place to chat and hang out with friends. Have a beer or two and enjoy ponies. Rules are simple: Don't be a jerk and keep the drama out.
+1: cadance.canternet.org
+2: 322
+3: LuckyLeaf #TheWorkshop 5 
+4: [+nt] Just a place to chat and hang out with friends. Have a beer or two and enjoy ponies. Rules are simple: Don't be a jerk and keep the drama out.
+
+Matched: >> :cadance.canternet.org 322 LuckyLeaf #cnscp 2 :[+BCFHJKTnt 3:60 5:30 4] The official channel for the CNSCP-pack Minecraft server. UESF members welcome!
+1: cadance.canternet.org
+2: 322
+3: LuckyLeaf #cnscp 2 
+4: [+BCFHJKTnt 3:60 5:30 4] The official channel for the CNSCP-pack Minecraft server. UESF members welcome!
+
+Matched: >> :cadance.canternet.org 322 LuckyLeaf #Canternet 42 :[+ACHPSTfnt 10:300 4:5] Official lobby channel of Canternet. This channel is PG. /join #Help for support | To register a nick : /msg NickServ REGISTER <password> <email> | To find channels: /list | http://rainbowdash.net/canternet | Idle RPG Channel: #IdleRPG
+1: cadance.canternet.org
+2: 322
+3: LuckyLeaf #Canternet 42 
+4: [+ACHPSTfnt 10:300 4:5] Official lobby channel of Canternet. This channel is PG. /join #Help for support | To register a nick : /msg NickServ REGISTER <password> <email> | To find channels: /list | http://rainbowdash.net/canternet | Idle RPG Channel: #IdleRPG
+
+Matched: >> :cadance.canternet.org 322 LuckyLeaf #EverfreeNW 12 :[+nt] Unofficial channel for Everfree NorthWest (http://www.everfreenw.com/) - Starts in under 24hrs!
+1: cadance.canternet.org
+2: 322
+3: LuckyLeaf #EverfreeNW 12 
+4: [+nt] Unofficial channel for Everfree NorthWest (http://www.everfreenw.com/) - Starts in under 24hrs!
+
+Matched: >> :cadance.canternet.org 322 LuckyLeaf #LeagueOfEquestria 2 :[+nt] Greetings, Summoner. Here are this week's free champions. http://leagueoflegends.wikia.com/wiki/League_of_Legends_Wiki Please read the rules and enjoy your stay. http://derpy.me/TH5dE 
+1: cadance.canternet.org
+2: 322
+3: LuckyLeaf #LeagueOfEquestria 2 
+4: [+nt] Greetings, Summoner. Here are this week's free champions. http://leagueoflegends.wikia.com/wiki/League_of_Legends_Wiki Please read the rules and enjoy your stay. http://derpy.me/TH5dE 
+
+Matched: >> :cadance.canternet.org 322 LuckyLeaf #theplanningroom 2 :[+nt] 
+1: cadance.canternet.org
+2: 322
+3: LuckyLeaf #theplanningroom 2 
+4: [+nt] 
+
+Matched: >> :cadance.canternet.org 322 LuckyLeaf #ModCentral 1 :[+nt] Over-Arching Mod Channel of EqD, Study and EFR Channels in order to improve relations and communication! | & = Head of Channel (~), @ = SOP of Channel (&), % = AOP of Channel (@), + = HOP of Channel (%) |
+1: cadance.canternet.org
+2: 322
+3: LuckyLeaf #ModCentral 1 
+4: [+nt] Over-Arching Mod Channel of EqD, Study and EFR Channels in order to improve relations and communication! | & = Head of Channel (~), @ = SOP of Channel (&), % = AOP of Channel (@), + = HOP of Channel (%) |
+
+Matched: >> :cadance.canternet.org 322 LuckyLeaf #HavenRomanceRP 2 :[+nt] 
+1: cadance.canternet.org
+2: 322
+3: LuckyLeaf #HavenRomanceRP 2 
+4: [+nt] 
+
+Matched: >> :cadance.canternet.org 322 LuckyLeaf #MicroRoom 3 :[+nt] 
+1: cadance.canternet.org
+2: 322
+3: LuckyLeaf #MicroRoom 3 
+4: [+nt] 
+
+Matched: >> :cadance.canternet.org 322 LuckyLeaf #amide 1 :[+nt] 
+1: cadance.canternet.org
+2: 322
+3: LuckyLeaf #amide 1 
+4: [+nt] 
+
+Matched: >> :cadance.canternet.org 322 LuckyLeaf #Scatman's_World 1 :[+nt] A happy place where everyone is equal and everyone is loved.
+1: cadance.canternet.org
+2: 322
+3: LuckyLeaf #Scatman's_World 1 
+4: [+nt] A happy place where everyone is equal and everyone is loved.
+
+Matched: >> :cadance.canternet.org 322 LuckyLeaf #FillyradioR 2 :[+nt] 
+1: cadance.canternet.org
+2: 322
+3: LuckyLeaf #FillyradioR 2 
+4: [+nt] 
+
+Matched: >> :cadance.canternet.org 322 LuckyLeaf # 3 :[+Pnt] The # Channel.
+1: cadance.canternet.org
+2: 322
+3: LuckyLeaf # 3 
+4: [+Pnt] The # Channel.
+
+Matched: >> :cadance.canternet.org 322 LuckyLeaf #wingboner 3 :[+nt] *pomf* | dude did you just bark | Please don't use scripts that message the channel
+1: cadance.canternet.org
+2: 322
+3: LuckyLeaf #wingboner 3 
+4: [+nt] *pomf* | dude did you just bark | Please don't use scripts that message the channel
+
+Matched: >> :cadance.canternet.org 322 LuckyLeaf #craftingismagic 3 :[+nt] Welcome to the Crafting is Magic IRC Chat Room! Feel free to stay a while. Check out #CiM:RP and #CiM:OOC as well if you want to do some RPing! Use #CiM:Support for help! Say someones name to alert them!
+1: cadance.canternet.org
+2: 322
+3: LuckyLeaf #craftingismagic 3 
+4: [+nt] Welcome to the Crafting is Magic IRC Chat Room! Feel free to stay a while. Check out #CiM:RP and #CiM:OOC as well if you want to do some RPing! Use #CiM:Support for help! Say someones name to alert them!
+
+Matched: >> :cadance.canternet.org 322 LuckyLeaf #EquestriaDreamsNSFW 2 :[+nt] Share your erotic dreams here! | [NSFW 18+] | Main Channel: #EquestriaDreams
+1: cadance.canternet.org
+2: 322
+3: LuckyLeaf #EquestriaDreamsNSFW 2 
+4: [+nt] Share your erotic dreams here! | [NSFW 18+] | Main Channel: #EquestriaDreams
+
+Matched: >> :cadance.canternet.org 322 LuckyLeaf #FoEDnDOOC 2 :[+nt] 
+1: cadance.canternet.org
+2: 322
+3: LuckyLeaf #FoEDnDOOC 2 
+4: [+nt] 
+
+Matched: >> :cadance.canternet.org 322 LuckyLeaf #trotmania 3 :[+nt] TrotMania | StepMania + Ponies + ??? = BITS! | CHRYSTALIZE. IS. HERE! | http://trotmania.blogspot.com | For general SM support, #stepmania-devs on Freenode is fine too
+1: cadance.canternet.org
+2: 322
+3: LuckyLeaf #trotmania 3 
+4: [+nt] TrotMania | StepMania + Ponies + ??? = BITS! | CHRYSTALIZE. IS. HERE! | http://trotmania.blogspot.com | For general SM support, #stepmania-devs on Freenode is fine too
+
+Matched: >> :cadance.canternet.org 322 LuckyLeaf * 0 :
+1: cadance.canternet.org
+2: 322
+3: LuckyLeaf * 0 
+4: 
+
+Matched: >> :cadance.canternet.org 322 LuckyLeaf * 2 :
+1: cadance.canternet.org
+2: 322
+3: LuckyLeaf * 2 
+4: 
+
+Matched: >> :cadance.canternet.org 322 LuckyLeaf #EquestriaDailyRP 28 :[+Snt] Welcome to the RP channel. This RP is dedicated to following the style and nature of the show as closely as possible. A strict PG rating is in effect. If you are new, please do not post here, and join #equestriadailyooc for further instructions.
+1: cadance.canternet.org
+2: 322
+3: LuckyLeaf #EquestriaDailyRP 28 
+4: [+Snt] Welcome to the RP channel. This RP is dedicated to following the style and nature of the show as closely as possible. A strict PG rating is in effect. If you are new, please do not post here, and join #equestriadailyooc for further instructions.
+
+Matched: >> :cadance.canternet.org 322 LuckyLeaf #greenworld 3 :[+nt] Welcome to #greenworld!  Please mind the dust, still under construction. 
+1: cadance.canternet.org
+2: 322
+3: LuckyLeaf #greenworld 3 
+4: [+nt] Welcome to #greenworld!  Please mind the dust, still under construction. 
+
+Matched: >> :cadance.canternet.org 322 LuckyLeaf #ponyville-ooc 6 :[+nt] %%%%%%%% (OOC CHANNEL) Main channel is #ponyville | General rules: http://derpy.me/Canterlot | Characters: http://derpy.me/CastofCharacters | Background: http://derpy.me/Canterlot-Story | Logs, type -log
+1: cadance.canternet.org
+2: 322
+3: LuckyLeaf #ponyville-ooc 6 
+4: [+nt] %%%%%%%% (OOC CHANNEL) Main channel is #ponyville | General rules: http://derpy.me/Canterlot | Characters: http://derpy.me/CastofCharacters | Background: http://derpy.me/Canterlot-Story | Logs, type -log
+
+Matched: >> :cadance.canternet.org 322 LuckyLeaf #superheroponyverse 1 :[+nt] Superhero universe has been separated from the Anime one due to continuity-related problems. The ones that are based on an anime with its own universe and laws cannot be played here. The Anime RP can be found from here: #AnimePonyverse
+1: cadance.canternet.org
+2: 322
+3: LuckyLeaf #superheroponyverse 1 
+4: [+nt] Superhero universe has been separated from the Anime one due to continuity-related problems. The ones that are based on an anime with its own universe and laws cannot be played here. The Anime RP can be found from here: #AnimePonyverse
+
+Matched: >> :cadance.canternet.org 322 LuckyLeaf #bristolbronies 4 :[+nt] Next upcoming Bristol Bronies meet: International Bikini Day: 05/07/2013 - 5:30 pm - 9:30 pm Temple Quay Starbucks 1 Temple Square Bristol (http://bristolbronies.co.uk/meet/international-bikini-day/). For more upcoming meets type '.meets'
+1: cadance.canternet.org
+2: 322
+3: LuckyLeaf #bristolbronies 4 
+4: [+nt] Next upcoming Bristol Bronies meet: International Bikini Day: 05/07/2013 - 5:30 pm - 9:30 pm Temple Quay Starbucks 1 Temple Square Bristol (http://bristolbronies.co.uk/meet/international-bikini-day/). For more upcoming meets type '.meets'
+
+Matched: >> :cadance.canternet.org 322 LuckyLeaf #OctagonPNP 1 :[+nt] Pending Schedule
+1: cadance.canternet.org
+2: 322
+3: LuckyLeaf #OctagonPNP 1 
+4: [+nt] Pending Schedule
+
+Matched: >> :cadance.canternet.org 322 LuckyLeaf #Neighayenne 5 :[+mnt] #Neighayenne  Flashpoint 2: Blowing Up The Chessboard: Part I (7/6/13, 1900 CDT (+/- 15 minutes))
+1: cadance.canternet.org
+2: 322
+3: LuckyLeaf #Neighayenne 5 
+4: [+mnt] #Neighayenne  Flashpoint 2: Blowing Up The Chessboard: Part I (7/6/13, 1900 CDT (+/- 15 minutes))
+
+Matched: >> :cadance.canternet.org 322 LuckyLeaf #falloutequestriaspoilers 4 :[+nt] All Fallout: Equestria related story spoilers should go here for at least the first 24 hours after chapter release.
+1: cadance.canternet.org
+2: 322
+3: LuckyLeaf #falloutequestriaspoilers 4 
+4: [+nt] All Fallout: Equestria related story spoilers should go here for at least the first 24 hours after chapter release.
+
+Matched: >> :cadance.canternet.org 322 LuckyLeaf #EAD 16 :[+Hnt 10:240] Be mature, don't RP chain, don't spam !link | KF server: kf.canternet.org Pass: poni | Mumble: voice.canternet.org | | Yiff in hell, furfags!
+1: cadance.canternet.org
+2: 322
+3: LuckyLeaf #EAD 16 
+4: [+Hnt 10:240] Be mature, don't RP chain, don't spam !link | KF server: kf.canternet.org Pass: poni | Mumble: voice.canternet.org | | Yiff in hell, furfags!
+
+Matched: >> :cadance.canternet.org 322 LuckyLeaf #fridge 4 :[+nt] Welcome to the Fridge; a nice cold place to rest your bones in some jello and take a swim in chocolate milk. But watch out, I swear I saw some walking strawberries on the bottom shelf... :[
+1: cadance.canternet.org
+2: 322
+3: LuckyLeaf #fridge 4 
+4: [+nt] Welcome to the Fridge; a nice cold place to rest your bones in some jello and take a swim in chocolate milk. But watch out, I swear I saw some walking strawberries on the bottom shelf... :[
+
+Matched: >> :cadance.canternet.org 322 LuckyLeaf #EquestriaMusic 4 :[+nt] Welcome to EquestriaMusic, This room is PG-13. The room is currently a WIP as well so expect changes. Rules: http://derpy.me/EquestriaMusicRules 
+1: cadance.canternet.org
+2: 322
+3: LuckyLeaf #EquestriaMusic 4 
+4: [+nt] Welcome to EquestriaMusic, This room is PG-13. The room is currently a WIP as well so expect changes. Rules: http://derpy.me/EquestriaMusicRules 
+
+Matched: >> :cadance.canternet.org 322 LuckyLeaf #ElectricErger 2 :[+nt] 
+1: cadance.canternet.org
+2: 322
+3: LuckyLeaf #ElectricErger 2 
+4: [+nt] 
+
+Matched: >> :cadance.canternet.org 322 LuckyLeaf #btvstaff 5 :[+nt] The BronyTV staff channel!
+1: cadance.canternet.org
+2: 322
+3: LuckyLeaf #btvstaff 5 
+4: [+nt] The BronyTV staff channel!
+
+Matched: >> :cadance.canternet.org 322 LuckyLeaf #DeadCityOps 4 :[+Hnt 20:9000] Welcome to Moosecow! Mind the Snorks! Proverb is best pony. Seenging PAIPES! OOC Channel: #DeadCityOpsOOC
+1: cadance.canternet.org
+2: 322
+3: LuckyLeaf #DeadCityOps 4 
+4: [+Hnt 20:9000] Welcome to Moosecow! Mind the Snorks! Proverb is best pony. Seenging PAIPES! OOC Channel: #DeadCityOpsOOC
+
+Matched: >> :cadance.canternet.org 322 LuckyLeaf #test 1 :[+nt] 
+1: cadance.canternet.org
+2: 322
+3: LuckyLeaf #test 1 
+4: [+nt] 
+
+Matched: >> :cadance.canternet.org 322 LuckyLeaf #SteamyPonies 3 :[+nt] 
+1: cadance.canternet.org
+2: 322
+3: LuckyLeaf #SteamyPonies 3 
+4: [+nt] 
+
+Matched: >> :cadance.canternet.org 322 LuckyLeaf #BerryTube 45 :[+AHPlnt 20:600 60] BerryTube | http://berrytube.tv | EFNW Party Mode enabled, come to 261 for party cannons
+1: cadance.canternet.org
+2: 322
+3: LuckyLeaf #BerryTube 45 
+4: [+AHPlnt 20:600 60] BerryTube | http://berrytube.tv | EFNW Party Mode enabled, come to 261 for party cannons
+
+Matched: >> :cadance.canternet.org 322 LuckyLeaf #SeriousPony 7 :[+AHnt 32:10m] Welcome! | /PLEASE/ add us to your autojoin! || Channel guidelines: http://derpy.me/eEfQM (Updated Tue, 17 Apr, 2012 / 14:50 PDT) | This channel is UNRATED. But see the rules regarding that.
+1: cadance.canternet.org
+2: 322
+3: LuckyLeaf #SeriousPony 7 
+4: [+AHnt 32:10m] Welcome! | /PLEASE/ add us to your autojoin! || Channel guidelines: http://derpy.me/eEfQM (Updated Tue, 17 Apr, 2012 / 14:50 PDT) | This channel is UNRATED. But see the rules regarding that.
+
+Matched: >> :cadance.canternet.org 322 LuckyLeaf #Derpspoilers 4 :[+nt] Hello, welcome to Derpspoilers. In here you can post to your hearts content about Season four. So have fun, you can also chill here if you got banned from derpafterdark as well. But I doubt you'll last long. Have fun!
+1: cadance.canternet.org
+2: 322
+3: LuckyLeaf #Derpspoilers 4 
+4: [+nt] Hello, welcome to Derpspoilers. In here you can post to your hearts content about Season four. So have fun, you can also chill here if you got banned from derpafterdark as well. But I doubt you'll last long. Have fun!
+
+Matched: >> :cadance.canternet.org 322 LuckyLeaf #CanterlotCastle 10 :[+nt] Welcome to #CanterlotCastle, home of the royal princesses! Current setting is the personal studies of Princess Luna! Floorplans can be found here: http://i.imgur.com/EOkZQ.jpg Courtesy of Mike_Coltfield | Luna is.. busy! http://i.imgur.com/OOzka.jpg
+1: cadance.canternet.org
+2: 322
+3: LuckyLeaf #CanterlotCastle 10 
+4: [+nt] Welcome to #CanterlotCastle, home of the royal princesses! Current setting is the personal studies of Princess Luna! Floorplans can be found here: http://i.imgur.com/EOkZQ.jpg Courtesy of Mike_Coltfield | Luna is.. busy! http://i.imgur.com/OOzka.jpg
+
+Matched: >> :cadance.canternet.org 322 LuckyLeaf #GlompRP 3 :[+Hnt 15:9000] 
+1: cadance.canternet.org
+2: 322
+3: LuckyLeaf #GlompRP 3 
+4: [+Hnt 15:9000] 
+
+Matched: >> :cadance.canternet.org 322 LuckyLeaf #celestiaradio 69 :[+nt] Celestia Radio: Once smitten, twice Fluttershy! - http://ponify.me | http://derpy.me/CRWikiaIRCRules | http://derpy.me/CRWikiaSocialMedia | http://goo.gl/w6sO9 le schedule 
+1: cadance.canternet.org
+2: 322
+3: LuckyLeaf #celestiaradio 69 
+4: [+nt] Celestia Radio: Once smitten, twice Fluttershy! - http://ponify.me | http://derpy.me/CRWikiaIRCRules | http://derpy.me/CRWikiaSocialMedia | http://goo.gl/w6sO9 le schedule 
