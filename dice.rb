@@ -318,6 +318,8 @@ class Dice
         
     end
     
+    def parse_formula
+    
     # Function by Stack Overflow's mu is too short
     # http://stackoverflow.com/questions/9528035/ruby-stringscan-equivalent-to-return-matchdata
     def matches(s, re)

@@ -125,7 +125,6 @@ class IRC
                             end
                         when "396"
                             send_command(nil, "MODE", "+B") # OPTIMIZE
-                            send_command(nil, "WHOIS", "DontAskForCookies") # OPTIMIZE
                         end
                        
                     end
