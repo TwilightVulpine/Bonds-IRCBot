@@ -171,7 +171,7 @@ module Symbols
     SYM_NUMBERS = {
         0 => {
             :name => "zero",
-            :roman => "0",
+            :roman => "N",
         },
         1 => {
             :name => "one",
@@ -445,6 +445,79 @@ module Symbols
             :value => 900,
             :type => :number,
         }
+    }
+    
+    SYM_TAROT = {
+        :suits => {},
+        :major => {
+            0 => {
+                :name => "The Fool"    
+            },
+            1 => {
+                :name => "The Magician"    
+            },
+            2 => {
+                :name => "The High Priestess"    
+            },
+            3 => {
+                :name => "The Empress"    
+            },
+            4 => {
+                :name => "The Emperor"    
+            },
+            5 => {
+                :name => "The Hierophant"    
+            },
+            6 => {
+                :name => "The Lovers"    
+            },
+            7 => {
+                :name => "The Chariot"    
+            },
+            8 => {
+                :name => "Justice"    
+            },
+            9 => {
+                :name => "The Hermit"    
+            },
+            10 => {
+                :name => "Wheel of Fortune"    
+            },
+            11 => {
+                :name => "Strenght"    
+            },
+            12 => {
+                :name => "The Hanged Man"    
+            },
+            13 => {
+                :name => "Death"    
+            },
+            14 => {
+                :name => "Temperance"
+            },
+            15 => {
+                :name => "The Devil"    
+            },
+            16 => {
+                :name => "The Tower"    
+            },
+            17 => {
+                :name => "The Star"    
+            },
+            18 => {
+                :name => "The Moon"    
+            },
+            19 => {
+                :name => "The Sun"    
+            },
+            20 => {
+                :name => "The Judgement"    
+            },
+            21 => {
+                :name => "The World"    
+            },
+        },
+        :minor => {}
     }
     
     def self.test

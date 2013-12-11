@@ -1,5 +1,5 @@
 #!/usr/bin/ruby
-#coding: UTF-8
+# encoding: utf-8
 
 # IRC Class
 # Author :: Alex Carvalho
@@ -101,7 +101,7 @@ class IRC
             
             if line
                 
-                line = line.chomp
+                line = line.chomp.encode("utf-8","iso-8859-1")
                 puts inrecord = "<< #{line}"
                 @rawlog.info(inrecord)
                 parse = line.match(IRC_MESSAGE_REGEX)
@@ -121,10 +121,9 @@ class IRC
                             when @nick_regex
                                 reply_message(parse[:message].strip,parse[:nick].strip,nil,true)
                             when IRC_CHANNEL_REGEX
-                                reply_message(parse[:message].strip,parse[:nick].strip,parse[:parameters].strip)
+                                reply_message(parse[:message].strip,parse[:nick].strip,parse[:parameters].strip)                            when "396"
+                                    send_command(nil, "MODE", "+B") # OPTIMIZE
                             end
-                        when "396"
-                            send_command(nil, "MODE", "+B") # OPTIMIZE
                         end
                        
                     end
@@ -231,25 +230,38 @@ class IRC
         action = false
         
         case message
-        when matched = Dice::SET_REGEX
-            rolls = @dicebot.parse_set(message).collect{|r| r[:rolls][0]}
-            reply = "#{sender_nick}: #{rolls.inject(:+)} #{rolls.to_s}"
+        when matched = /(?<query>#{Dice::SET_REGEX})(?:\s+(?<context>.*))?/
+            roller_parser = message.match(matched)
+            roll = @dicebot.parse_to_s(roller_parser[:query].to_s)
+            reply = "#{sender_nick}: #{roller_parser[:context]} #{roll}"
             puts "Matched roll"
+            
         when matched = /#{@nick_regex}#{CALL_REGEX}(?:go\s*to|join)\s+(?<channel>#{IRC_CHANNEL_REGEX})/i
             reply = "#{sender_nick}: on my way."
             commands.push([nil,NET_COMMANDS[:join][0],message.match(matched)[:channel],""])
             puts "Matched join"
+            
         when matched = /#{@nick_regex}#{CALL_REGEX}(?:leave|go\s*away)/i
             reply = "#{sender_nick}: ;_;"
             commands.push([nil,NET_COMMANDS[:part][0],channel,"Nobody likes the bot..."])
             puts "Matched part"
+            
         when matched = /#{@nick_regex}#{CALL_REGEX}(?:explode|die)/i
             reply = "#{sender_nick}: O_O"
-            commands.push([nil,NET_COMMANDS[:quit][0],channel,"BITS FLY EVERYWHERE!!!"])
+            commands.push([nil,NET_COMMANDS[:quit][0],nil,"BITS FLY EVERYWHERE!!!"])
+        
         when matched = /shakes #{@nick_regex}/i
             puts "Reseeding to #{@dicebot.reset_seed}"
             reply = "rattles 9_6"
-            action = true       
+            action = true
+            
+        when matched = /oh my\A*$/i
+            reply = "waggles eyebrows"
+            action = true
+            
+        when matched = /(?:hugs)\s+#{@nick_regex}/i
+            reply = "hugs! ^_^"
+            action = true
         end
         
         send_message("#{reply}",to,action) if reply
@@ -260,4 +272,4 @@ class IRC
     
 end
 
-IRC.new("BondsBot",nil,nil,"irc.canternet.org",6669)
+IRC.new(IRCBotConfig::NICK,nil,nil,IRCBotConfig::SERVER,IRCBotConfig::PORT)

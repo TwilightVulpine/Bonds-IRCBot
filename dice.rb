@@ -1,4 +1,5 @@
 #!/usr/bin/ruby
+# encoding: utf-8
 
 # Dice Class
 # Author :: Alex Carvalho
@@ -29,9 +30,12 @@ class Dice
         :open_pool => "c",
     }
     
-    ROLL_REGEX = /(?<roll>(?<amount>\d+)(?<type>[#{ROLL_PREFIXES.values.join}])(?<range>\w+))(?<check>[!#<=>](\d+)[<=>])?/
-    FORMULA_REGEX = /(?<formula>((?:\d)*(?:\.\d+)?(?:%)?[\/\*\-\+])*(?<dicecalc>(?:#{ROLL_REGEX}([\/\*\-\+]\b)?)+)((?:\d)*(?:\.\d+)?(?:%)?(?:[\/\*\-\+]\b)?)*)/
-    SET_REGEX = /^\b(?:(?<repeat>\d+)#{REPEAT_SUFFIX})?(?<set>(#{FORMULA_REGEX}(;)?)+)\b/
+    ROLL_REGEX = /(?<roll>(?<amount>\d+)(?<type>[#{ROLL_PREFIXES.values.join}])(?<range>\w+))(?<check>[!<=>](\d+)[<=>])?/
+    FORMULA_REGEX = /(?<formula>((?:\()?(?:\d)*(?:\.\d+)?(?:%)?(?:\))?[\/\*\-\+\^])*(?<dicecalc>(?:#{ROLL_REGEX}([\/\*\-\+\^\%]\b)?)+)((?:\()?(?:\d)*(?:\.\d+)?(?:%)?(?:\))?(?:[\/\*\-\+\^]\b)?)*)/
+    SET_REGEX = /^\b(?:(?:(?<repeat>\d+)#{REPEAT_SUFFIX})?(?<set>(#{FORMULA_REGEX}))+(?:[\;\,])?)+\b/
+    
+    DIGITS_REGEX = /\d+(?:\.\d+)?/i
+    ALPHAWORD_REGEX = /(?:[A-Za-z_\.][A-Za-z_\.]+|[A-Za-z_])/i
     
     # /(?:(?<repeat>\d+)#{REPEAT_SUFFIX})?(?<formula>((?:\d+)?(?:\.\d+)?(?:%)?[\/\*\-\+])*(?<dicecalc>((?<roll>(?<amount>\d+)?(?<type>[#desx])(?<range>\w+))(?<check>[<=>](\d+)[<=>])?)([\/\*\-\+]\b)?)+((?:\d+)?(?:\.\d+)?(?:%)?(?:[\/\*\-\+]\b)?)*)/
     
@@ -77,6 +81,16 @@ class Dice
             
             "#{number}#{suit}"
         },
+        :cmajor => Array.new(22) { |c| 
+            
+            number = c
+            over = (number > 20) ? number % 20 : nil 
+            number = number - over if over
+            number = SYM_NUMBERS[number][:roman]
+            over = SYM_NUMBERS[over][:roman] if over
+            
+            "#{number}#{over}: #{SYM_TAROT[:major][c][:name]}"
+        },
         :rolls => ["face", "back", "side"],
         :sex => ["YES!", "Sure!", "Yup!"],
         :gender => ["male", "female"],
@@ -110,6 +124,11 @@ class Dice
         # HACK: The roll loops should be made into functions
         roll = nil
     	result = {:rolls => Array.new, :sum => 0, :target => target, :handicap => handicap, :explosion => explosion, :successes => 0, :error => false, :msg => msg}
+        
+        if amount == 0
+            result[:rolls].push(0)
+            return result
+        end
         
         loop_count = 0
         
@@ -266,7 +285,7 @@ class Dice
     end
     
 
-    def parse_set(set,user = nil,location = nil)
+    def parse_set(set,user = nil,origin = nil)
         
         set_parser = set.match(SET_REGEX)
         
@@ -297,7 +316,7 @@ class Dice
                             range = ["?"]
                         end
                         
-                        result.push(roll(range),amount)
+                        result.push(roll(range,amount))
                     
                 end
                 
@@ -309,16 +328,147 @@ class Dice
         
     end
     
-    def set_to_s(set,mode)
+    def parse_set2(set_query,user = nil,origin = nil)
         
-    
+        # result = {
+        #      :query => "#{set_query_query}",
+        #     :sentences => [{
+        #         :query => "",
+        #         :repetition => 0,
+        #         :instances => [{
+        #             :query => "",
+        #              :hands => [],
+        #              :text => "",
+        #             :solution => false, 
+        #          }]
+        #     }],
+        #     :user => user,
+        #     :origin => origin
+        #}
+        
+        set_query = set_query.match(SET_REGEX).to_s
+        queries = set_query.split(/[;,]/)
+        
+        
+        result = Hash.new
+        result[:query] = set_query
+        result[:user] = user if user
+        result[:origin] = origin if origin
+        result[:sentences] = Array.new
+        
+        for q in queries
+            
+            sentence_parser = q.match(SET_REGEX)
+            
+            sentence = Hash.new
+            sentence[:query] = sentence_parser[:set].to_s
+            sentence[:repetition] = (sentence_parser[:repeat])? sentence_parser[:repeat].to_i : 1
+            sentence[:instances] = Array.new
+            
+            for i in 0...sentence[:repetition]
+                
+                formula_parser = sentence[:query].match(FORMULA_REGEX)
+                
+                instance = Hash.new
+                instance[:query] = formula_parser.to_s
+                instance[:text] = instance[:query].dup
+                instance[:solution] = false
+                instance[:hands] = Array.new
+                
+                hand_queries = matches(instance[:query],ROLL_REGEX)
+                
+                for hand_parser in hand_queries
+                    
+                    amount = (hand_parser[:amount])? hand_parser[:amount].to_i : 1
+                    
+                    numeric  = hand_parser[:range] =~ /^\d+$/
+                    range_id = (numeric)? "d#{hand_parser[:range]}".to_sym : "#{hand_parser[:range]}".to_sym
+                    
+                    if !RANGES[range_id].nil?
+                        range = RANGES[range_id]
+                    elsif numeric
+                        range = hand_parser[:range].to_i
+                    else
+                        range = ["?"]
+                    end
+                    
+                    dice_roll = roll(range,amount)
+                    
+                    if dice_roll[:rolls].first.is_a?(Numeric)
+                        
+                        instance[:text].sub!(hand_parser.to_s,dice_roll[:sum].to_s)
+                        
+                    else
+                       
+                        instance[:text].sub!(hand_parser.to_s,dice_roll[:rolls].join(","))
+                        instance[:text].sub!("**","^")
+                        
+                    end
+                    
+                    instance[:hands].push(dice_roll)
+                    
+                end
+                
+                instance[:solution] = _eval_formula(instance[:text])
+                
+                sentence[:instances].push(instance)
+                
+            end
+            
+            result[:sentences].push(sentence)
+            
+        end
+        
+        return result
+        
     end
     
-    def parse_to_s()
+    def parse_to_s(set_query,user = nil,origin = nil,mode = nil) # TODO: Make mode do things
+        
+        set = parse_set2(set_query,user = nil,origin = nil)
+        reply = ""
+        
+        for s in set[:sentences]
+            
+            query = "#{s[:query]} = "
+            query = "#{s[:repetition]}##{query}" if (s[:repetition]>1)
+            
+            for i in s[:instances]
+                
+                if i[:solution]
+                   query = "#{query}#{i[:solution]};"
+                else
+                   query = "#{query}#{i[:text]};"
+                end
+                
+            end
+            
+            query.sub!(/;$/," ")
+            query = "#{query}["
+            
+            for i in s[:instances]
+                
+                
+                for h in i[:hands]
+                    
+                    query = "#{query}#{h[:rolls].join(',')};"
+                    
+                end
+                
+                query.sub!(/;$/,"|")
+                
+            end
+            
+            query.sub!(/[;|]$/,"")
+            query = "#{query}]. "
+            
+            reply = "#{reply}#{query}"
+            
+        end
+        
+        return reply
         
     end
-    
-    def parse_formula
     
     # Function by Stack Overflow's mu is too short
     # http://stackoverflow.com/questions/9528035/ruby-stringscan-equivalent-to-return-matchdata
@@ -355,19 +505,46 @@ class Dice
         
     end
     
+    def _eval_formula(formula,args = {})
+        
+        formula.gsub!(/(?<![\w\d])\./i,"0.")
+        
+        formula.gsub!("%","/100")
+        formula.gsub!("^","**")
+        
+        args.each {|k,v|
+            formula.gsub!(k.to_s,v.to_s)
+        }
+        
+        formula.gsub!(/(?:#{DIGITS_REGEX}#{ALPHAWORD_REGEX}|#{ALPHAWORD_REGEX}#{DIGITS_REGEX})/i) {|m| 
+            m.match(DIGITS_REGEX)[0]
+        }
+        
+        # formula.gsub!(/(?:(?<=[\*\/])#{ALPHAWORD_REGEX}|#{ALPHAWORD_REGEX}(?=[\*\/]))/i) {|m| 
+        #     "1"
+        # }
+        
+        # formula.gsub!(/(?:(?<=[\+\-])#{ALPHAWORD_REGEX}|#{ALPHAWORD_REGEX}(?=[\+\-]))/i) {|m| 
+        #     "0"
+        # }
+        
+        formula = "0+#{formula}"
+        
+        if _test_eval(formula)
+            return eval(formula)
+        else
+            return false
+        end
+    end
+    
+    def _test_eval(code)
+        begin
+            eval(code)
+            return true
+        rescue Exception => e
+            return false
+        end
+    end
+    
 end
-
-# puts x = Dice::SET_REGEX.to_s
-# dice = Dice.new
-# puts dice.parse_set("3#1dcoin").collect {|s| s[:rolls][0]}.inject(:+)
-#dice.parse_set("1d12+1d6+10;1d4")
-puts ""
-#dice.parse_set("2#2d6;3d4")
-puts ""
-# 10.times { 
-#     # puts dice.roll(x)[:rolls]
-#      10.times { print dice.roll(x)[:rolls][0]
-#      print " " }
-#      puts ""
-# }
-sleep(10)
+d = Dice.new
