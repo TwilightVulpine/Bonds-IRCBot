@@ -21,13 +21,13 @@ class Dice
     REPEAT_SUFFIX = "#"
     
     ROLL_PREFIXES = {
-        :roll => "d",
-        :explode => "e",
-        :success => "s",
-        :explode_success => "x",
-        :deck => "t",
-        :hand => "h",
-        :open_pool => "c",
+        :roll => "d" #,
+        # :explode => "e",
+        # :success => "s",
+        # :explode_success => "x",
+        # :deck => "t",
+        # :hand => "h",
+        # :open_pool => "c",
     }
     
     ROLL_REGEX = /(?<roll>(?<amount>\d+)(?<type>[#{ROLL_PREFIXES.values.join}])(?<range>\w+))(?<check>[!<=>](\d+)[<=>])?/
@@ -98,7 +98,7 @@ class Dice
     }
     RANGES[:c54] = Array.new(RANGES[:c52]).push("#{SYM_COLORS[:red][:abbrev]}#{SYM_FACES[:joker][:abbrev]}","#{SYM_COLORS[:black][:abbrev]}#{SYM_FACES[:joker][:abbrev]}")
     RANGES[:c56] = Array.new(RANGES[:c52]).push(*SYM_SUITS.collect{ |key,suit| "#{SYM_FACES[:joker][:abbrev]}#{suit[:unicode]}"})
-    
+    RANGES[:f] = RANGES[:fudge]
     
     MINOR_ARCANA_DECK = Array.new
     MAJOR_ARCANA_DECK = Array.new 
@@ -520,6 +520,10 @@ class Dice
             m.match(DIGITS_REGEX)[0]
         }
         
+        formula.gsub!(/(?:#{ALPHAWORD_REGEX}+)/i) {|m| 
+            "?"
+        }
+        
         # formula.gsub!(/(?:(?<=[\*\/])#{ALPHAWORD_REGEX}|#{ALPHAWORD_REGEX}(?=[\*\/]))/i) {|m| 
         #     "1"
         # }
@@ -547,4 +551,3 @@ class Dice
     end
     
 end
-d = Dice.new

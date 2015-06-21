@@ -7,7 +7,6 @@
 require "socket"
 require "logger"
 require "./dice.rb"
-require "./config.rb"
 
 class IRC
     
@@ -271,5 +270,3 @@ class IRC
     end
     
 end
-
-IRC.new(IRCBotConfig::NICK,nil,nil,IRCBotConfig::SERVER,IRCBotConfig::PORT)
